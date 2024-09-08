@@ -26,6 +26,7 @@
             align-items: flex-end; /* Align items to the bottom */
             justify-content: flex-start; /* Align items to the left */
             padding: 0 20px; /* Padding on the sides */
+            position: relative; /* Position relative for absolute positioning of logo */
         }
 
         /* Container for text */
@@ -64,21 +65,17 @@
             text-decoration: none; /* Remove underline */
         }
 
+        /* Style for the logo */
+        .logo {
+            position: absolute; /* Absolute positioning */
+            top: 20px; /* Distance from the top */
+            left: 20px; /* Distance from the left */
+            width: 100px; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
         /* Font import for McKinsey-style font (example: if using a Google Font) */
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
         body {
             font-family: 'Roboto', sans-serif;
-        }
-    </style>
-</head>
-<body>
-    <div class="background">
-        <div class="text-container">
-            <h1 class="title">Energy Storage Partners</h1>
-            <p class="subtitle">Poland's energy transition delivered.</p>
-            <p class="contact"><a href="mailto:contact@energy-storage-partners.com">contact@energy-storage-partners.com</a></p>
-        </div>
-    </div>
-</body>
-</html>
